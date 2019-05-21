@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+            <state relative-caret-position="361">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -98,7 +98,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1351" />
+    <option name="width" value="1734" />
     <option name="height" value="1407" />
   </component>
   <component name="ProjectView">
@@ -123,6 +123,11 @@
               <item name="Multimodal-Training" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
               <item name="Text" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Multimodal-Training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Multimodal-Training" type="462c0819:PsiDirectoryNode" />
+              <item name="TextTraining" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -194,19 +199,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558435633246</updated>
-      <workItem from="1558435639832" duration="21973000" />
+      <workItem from="1558435639832" duration="22539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21973000" />
+    <option name="totallyTimeSpent" value="22539000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1351" height="1407" extended-state="0" />
+    <frame x="-7" y="0" width="1734" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24167313" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28733572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -343,8 +348,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+        <state relative-caret-position="361">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
