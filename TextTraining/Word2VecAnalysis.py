@@ -39,7 +39,7 @@ def usePretrainedModel(PreTrainedModelPath, outputModelPath, outputModelPath2, s
     watch.printLapTime("Save Finished!")
 
     watch.printStartMeasure("Saving Model2...")
-    model.save(outputModelPath)
+    model_2.save(outputModelPath)
     watch.printLapTime("Save Finished!")
 
     analyzeWord2VecModel(model)
@@ -48,6 +48,7 @@ def usePretrainedModel(PreTrainedModelPath, outputModelPath, outputModelPath2, s
 
 def analyzeWord2VecModel(model):
     words = list(model.wv.vocab)
+    print(model.wv.vocab['explosion'])
     print(words)
     result = model.most_similar(positive=['woman', 'king'], negative=['man'], topn=1)
     print(result)
@@ -64,6 +65,7 @@ def scatterPlotFromVocabulary(model, words):
 
 
 def main():
+    '''
     outputPath = "testSubtitle.bin"
     outputPath2 = "testSubtitle2.bin"
     sentences = TextManager.getFullSubtitleSentences()
@@ -73,7 +75,6 @@ def main():
     '''
     model = TextModels.getAudiodescribedPretrainedKeyedVectors()
     analyzeWord2VecModel(model)
-    '''
 
 
 if (__name__ == '__main__'):
