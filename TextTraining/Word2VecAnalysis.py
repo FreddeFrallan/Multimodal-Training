@@ -49,9 +49,8 @@ def usePretrainedModel(PreTrainedModelPath, outputModelPath, outputModelPath2, s
 
 
 def analyzeWord2VecModel(model):
-    words = list(model.wv.vocab)
-    print(model.wv.vocab['explosion'])
-    print(words)
+    #words = list(model.wv.vocab)
+    #print("Vocabulary Size:", len(words))
     result = model.most_similar(positive=['woman', 'king'], negative=['man'], topn=1)
     print(result)
     print(model.most_similar(['man']))
@@ -67,9 +66,9 @@ def scatterPlotFromVocabulary(model, words):
 
 
 def main():
-    outputPath = "testSubtitle.bin"
-    outputPath2 = "testSubtitle2.bin"
-    sentences = TextManager.getFullSubtitleSentences()
+    outputPath = "testAudiodescribed.bin"
+    outputPath2 = "testAudiodescribed2.bin"
+    sentences = TextManager.getFullAudiodescribedSentences()
     preTrainedModelPath = TextModels.getGooglePreTrainedPath()
     usePretrainedModel(preTrainedModelPath, outputPath, outputPath2, sentences)
 
