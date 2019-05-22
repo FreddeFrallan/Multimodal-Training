@@ -14,7 +14,7 @@ def trainWord2VecFromScratch(corpusPath):
     # model.wv.save_word2vec_format('model.bin')
 
 
-def usePretrainedModel(PreTrainedModelPath, outputModelPath, sentences):
+def usePretrainedModel(PreTrainedModelPath, outputModelPath, outputModelPath2, sentences):
     from gensim.models import KeyedVectors
 
     model_2 = Word2Vec(size=300, min_count=1)
@@ -38,6 +38,13 @@ def usePretrainedModel(PreTrainedModelPath, outputModelPath, sentences):
     model.save(outputModelPath)
     watch.printLapTime("Save Finished!")
 
+    watch.printStartMeasure("Saving Model2...")
+    model.save(outputModelPath)
+    watch.printLapTime("Save Finished!")
+
+    analyzeWord2VecModel(model)
+    analyzeWord2VecModel(model_2)
+
 
 def analyzeWord2VecModel(model):
     words = list(model.wv.vocab)
@@ -58,13 +65,15 @@ def scatterPlotFromVocabulary(model, words):
 
 def main():
     outputPath = "testSubtitle.bin"
-    '''
+    outputPath2 = "testSubtitle2.bin"
     sentences = TextManager.getFullSubtitleSentences()
     preTrainedModelPath = TextModels.getGooglePreTrainedPath()
-    usePretrainedModel(preTrainedModelPath, outputPath, sentences)
+    usePretrainedModel(preTrainedModelPath, outputPath, outputPath2, sentences)
+
     '''
-    model = Word2Vec.load(outputPath)
+    model = TextModels.getAudiodescribedPretrainedKeyedVectors()
     analyzeWord2VecModel(model)
+    '''
 
 
 if (__name__ == '__main__'):
