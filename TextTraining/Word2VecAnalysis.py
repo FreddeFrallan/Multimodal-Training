@@ -57,8 +57,12 @@ def scatterPlotFromVocabulary(model, words):
     pyplot.show()
 
 
-if (__name__ == '__main__'):
+def main():
     sentences = TextManager.getFullSubtitleSentences()
     preTrainedModelPath = TextModels.getGooglePreTrainedPath()
     outputPath = "SubtitleModelPreTrained.bin"
     usePretrainedModel(preTrainedModelPath, outputPath, sentences)
+
+
+if (__name__ == '__main__'):
+    main()
