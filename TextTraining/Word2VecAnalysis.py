@@ -35,8 +35,7 @@ def usePretrainedModel(PreTrainedModelPath, outputModelPath, sentences):
     watch.printLapTime("Training Finished!")
 
     watch.printStartMeasure("Saving Model...")
-    #with open(outputModelPath, 'w') as file:
-    model.save(outputModelPath, pickle_protocol=4)
+    model.save(outputModelPath)
     watch.printLapTime("Save Finished!")
 
 
@@ -60,7 +59,7 @@ def scatterPlotFromVocabulary(model, words):
 def main():
     sentences = TextManager.getFullSubtitleSentences()
     preTrainedModelPath = TextModels.getGooglePreTrainedPath()
-    outputPath = "SubtitleModelPreTrained.bin"
+    outputPath = "testSubtitle.bin"
     usePretrainedModel(preTrainedModelPath, outputPath, sentences)
 
 
