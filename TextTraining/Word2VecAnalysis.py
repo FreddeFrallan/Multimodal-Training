@@ -39,11 +39,13 @@ def usePretrainedModel(PreTrainedModelPath, outputModelPath, outputModelPath2, s
     watch.printLapTime("Save Finished!")
 
     watch.printStartMeasure("Saving Model2...")
-    model_2.save(outputModelPath)
+    model_2.save(outputModelPath2)
     watch.printLapTime("Save Finished!")
 
+    '''
     analyzeWord2VecModel(model)
     analyzeWord2VecModel(model_2)
+    '''
 
 
 def analyzeWord2VecModel(model):
