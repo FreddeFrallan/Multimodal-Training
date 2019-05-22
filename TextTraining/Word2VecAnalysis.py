@@ -57,10 +57,14 @@ def scatterPlotFromVocabulary(model, words):
 
 
 def main():
+    outputPath = "testSubtitle.bin"
+    '''
     sentences = TextManager.getFullSubtitleSentences()
     preTrainedModelPath = TextModels.getGooglePreTrainedPath()
-    outputPath = "testSubtitle.bin"
     usePretrainedModel(preTrainedModelPath, outputPath, sentences)
+    '''
+    model = Word2Vec.load(outputPath)
+    analyzeWord2VecModel(model)
 
 
 if (__name__ == '__main__'):
