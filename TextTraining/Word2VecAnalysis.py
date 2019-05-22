@@ -65,7 +65,6 @@ def scatterPlotFromVocabulary(model, words):
 
 
 def main():
-    '''
     outputPath = "testSubtitle.bin"
     outputPath2 = "testSubtitle2.bin"
     sentences = TextManager.getFullSubtitleSentences()
@@ -75,6 +74,7 @@ def main():
     '''
     model = TextModels.getAudiodescribedPretrainedKeyedVectors()
     analyzeWord2VecModel(model)
+    '''
 
 
 if (__name__ == '__main__'):
