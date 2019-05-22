@@ -58,7 +58,7 @@ def scatterPlotFromVocabulary(model, words):
 
 
 def main():
-    sentences = TextManager.getFullAudiodescribedSentences()
+    sentences = TextManager.getFullSubtitleSentences()
     preTrainedModelPath = TextModels.getGooglePreTrainedPath()
     outputPath = "SubtitleModelPreTrained.bin"
     usePretrainedModel(preTrainedModelPath, outputPath, sentences)
