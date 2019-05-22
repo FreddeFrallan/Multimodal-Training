@@ -36,7 +36,7 @@ def usePretrainedModel(PreTrainedModelPath, outputModelPath, sentences):
 
     watch.printStartMeasure("Saving Model...")
     with open(outputModelPath, 'w') as file:
-        model.save(file)
+        model.save(file, pickle_protocol=4)
     watch.printLapTime("Save Finished!")
 
 
