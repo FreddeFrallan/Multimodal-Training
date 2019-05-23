@@ -18,12 +18,12 @@ def getFullAudiodescribedCorpusPath():
 
 
 def getFullSubtitleCorpus():
-    with open(_getAbsoluteFolderPath(FULL_SUBTITLE_FILE_NAME)) as file:
+    with open(getFullSubtitleCorpusPath(), 'r', errors='replace') as file:
         return file.readlines()
 
 
 def getFullAudiodescribedCorpus():
-    with open(_getAbsoluteFolderPath(FULL_AUDIODESCRIBED_FILE_NAME)) as file:
+    with open(getFullAudiodescribedCorpusPath(), 'r', errors='replace') as file:
         return file.readlines()
 
 def _splitLinesIntoSentences(lines):
